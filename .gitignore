@@ -1,0 +1,29 @@
+# Eclipse-specific files
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA files (since you used IntelliJ previously)
+.idea/
+*.iml
+
+# Gradle files
+.gradle/
+build/
+
+# Java output directories
+bin/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Other files
+*.class
