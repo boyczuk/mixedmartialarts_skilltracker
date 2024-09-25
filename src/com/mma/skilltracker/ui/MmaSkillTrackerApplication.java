@@ -1,6 +1,7 @@
 package com.mma.skilltracker.ui;
 
 import com.mma.skilltracker.models.Fighter;
+import com.mma.skilltracker.models.Lift;
 import com.mma.skilltracker.models.Skill;
 
 public class MmaSkillTrackerApplication {
@@ -13,6 +14,8 @@ public class MmaSkillTrackerApplication {
         fighter.addSkill(muayThai);
         fighter.addSkill(bjj);
         fighter.addSkill(boxing);
+        Lift benchPress = new Lift("Bench Press", 225, 4, 10);
+        fighter.addLift(benchPress);
         
         
         // Test the Fighter object
@@ -22,6 +25,9 @@ public class MmaSkillTrackerApplication {
 
         for (Skill skill : fighter.getSkills()) {
         	System.out.println(skill.getName() + " (level: " + skill.getLevel() + ")");
+        }
+        for (Lift lift : fighter.getLifts()) {
+        	System.out.println(lift.getName() + " Weight: " + lift.getWeight() + " (sets: " + lift.getSets() + ", reps: " + lift.getReps() + ")");
         }
     }
 }

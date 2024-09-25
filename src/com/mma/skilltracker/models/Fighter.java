@@ -1,5 +1,6 @@
 package com.mma.skilltracker.models;
 import java.util.ArrayList;
+import com.mma.skilltracker.models.Lift;
 import com.mma.skilltracker.models.Skill;
 
 public class Fighter {
@@ -8,12 +9,14 @@ public class Fighter {
     double weightLbs;
     String heightIn;
     ArrayList<Skill> skills;
+    ArrayList<Lift> lifts;
 
     public Fighter(String name, int age, double weightLbs, String heightIn) { 
     	this.name = name;
     	this.age = age;
     	this.weightLbs = weightLbs;
     	this.skills = new ArrayList<>();
+    	this.lifts = new ArrayList<>();
     }
 
     public String getName() {
@@ -56,6 +59,13 @@ public class Fighter {
     	return skills;
     }
     
+    public void addLift(Lift newLift) {
+    	this.lifts.add(newLift);
+    }
+    
+    public ArrayList<Lift> getLifts(){
+    	return lifts;
+    }
 
 }
 
