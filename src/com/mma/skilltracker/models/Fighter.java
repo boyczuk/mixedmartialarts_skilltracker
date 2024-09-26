@@ -15,6 +15,7 @@ public class Fighter {
     	this.name = name;
     	this.age = age;
     	this.weightLbs = weightLbs;
+    	this.heightIn = heightIn;
     	this.skills = new ArrayList<>();
     	this.lifts = new ArrayList<>();
     }
